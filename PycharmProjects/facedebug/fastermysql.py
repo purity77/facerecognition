@@ -4,7 +4,8 @@ import cv2
 import pickle
 from multiprocessing import Pool
 import pymysql
-import prettytable
+from prettytable import from_db_cursor
+from prettytable import PrettyTable
 # This is a demo of running face recognition on live video from your webcam. It's a little more complicated than the
 # 这个例子处理更快速：
 #   1. 缩放捕捉到的每帧到1/8
@@ -100,6 +101,14 @@ def querydb(db):
         # print(table)
     except:
         print("Error: unable to fecth data")
+def ptable(db):
+    cur = db.cursor()
+    cur.execute("SELECT * FROM dayattend ORDER BY attend ASC")
+    table = from_db_cursor(cur)
+    print(table)
+    f=open("../test.txt","a+")
+    f.write(str(table))
+    f.close()
 
 def deletedb(db):
     # 使用cursor()方法获取操作游标
@@ -223,6 +232,7 @@ querydb(db)
 updatedb(db)
 print("\n出勤学生attend为1")
 querydb(db)
+ptable(db)
 closedb(db)
 # def main():
 #     db = connectdb()    # 连接MySQL数据库
