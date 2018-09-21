@@ -118,7 +118,7 @@ class Ui_MainWindow(object):
     def start_recognize(self):
         print("第一步正确")
 
-        os.system('./fastermysql.py')  #运行统一目录下另外一个python文件
+        os.system('python3 ./fastermysql.py')  #运行同一目录下另外一个python文件
         print("第二步正确")
 
     def retranslateUi(self, MainWindow):
