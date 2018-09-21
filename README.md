@@ -39,3 +39,40 @@
 * [send_mail_add_more.py](https://github.com/purity77/facerecognition/blob/master/PycharmProjects/facedebug/send_mail_add_more.py) 邮箱发送程序
 * [testconnect.py](https://github.com/purity77/facerecognition/blob/master/PycharmProjects/facedebug/testconnect.py) pycharm远程开发程序
 * [UI_3.py](https://github.com/purity77/facerecognition/blob/master/PycharmProjects/facedebug/UI_3.py) UI设计程序
+
+项目开发模块及软件
+---
+### 系统环境
+* 树莓派raspian 
+* 开发主机Ubuntu或Windows
+
+### 软件
+* fielzilla 通过sftp连接树莓派传输文件
+* pycharm professional 通过sftp远程调试python程序
+* Gitkaren git 图形化界面管理工具
+* Ubuntu或Windows自带远程桌面客户端
+* mysql + mysql Navicat或者workbench
+
+相关资源教程
+---
+* [markdown语法](https://www.jianshu.com/p/fff8a9d9eaad)
+* [mysql命令简单操作](https://www.jianshu.com/p/694d7d0a170b)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
